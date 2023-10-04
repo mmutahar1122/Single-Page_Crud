@@ -49,7 +49,7 @@ const Form = () => {
         if(editMood){
           const index = arrState.findIndex((users)=> users.id === state.id)
           console.log(index,'index');
-            if(index > 0){
+            if(index !== -1){
               const obj={title,description,id};
               arrState[index]=obj;
               setState(initialState);
