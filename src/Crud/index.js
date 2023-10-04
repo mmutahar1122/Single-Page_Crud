@@ -90,7 +90,6 @@ const Form = () => {
     <nav id='navbar'><h1>TODO</h1></nav>
       <form id='myForm' onSubmit={handleSubmit}>
         <h2>Todo App</h2>
-        
         <input
           className='input-field'
           type='text'

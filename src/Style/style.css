@@ -12,7 +12,7 @@
 }
 #myForm{
     height: 180px;
-    width: 400px;
+    width: 30%;
     background-color: rgb(231, 231, 205);
     /* background-color: rgb(222, 222, 200); */
     position: relative;
@@ -27,7 +27,7 @@ justify-content: center;
 .input-field{
     display: block;
     /* height: 30px; */
-    width: 250px;
+    width: 80%;
     margin: auto;
     margin-top: 5%;
     border: none;
@@ -51,8 +51,11 @@ justify-content: center;
     cursor: pointer;
 }
 #main-Container{
-    position: relative;
-align-items: center;}
+    display: flex;
+        justify-content: center;
+    width: 100%;
+flex-wrap: wrap;
+}
 #Discription-Container{
     height: 230px;
     width: 350px;
@@ -94,3 +97,111 @@ align-items: center;}
     display: flex;
     justify-content: center;
 }
+@media only screen and (max-width: 991px) {
+  
+    #myForm{
+        height: 150px;
+        width: 50%;
+        background-color: rgb(231, 231, 205);
+        /* background-color: rgb(222, 222, 200); */
+        position: relative;
+        margin: auto;
+        top: 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+   
+    #myForm{
+        height: 150px;
+        width: 70%;
+        background-color: rgb(231, 231, 205);
+        /* background-color: rgb(222, 222, 200); */
+        position: relative;
+        margin: auto;
+        top: 30px;
+    }
+    #main-Container{
+        margin-top: 50px;
+   }
+   #submit-btn{
+    height: 40px;
+        width: 40px;
+        border-radius: 2rem;
+        background-color: rgb(240, 97, 54);
+        color: white;  
+        border:none;
+        margin-left: 65%;
+        position: relative;
+        top: 8%;
+        cursor: pointer;
+    
+
+}
+}
+
+@media only screen and (max-width: 500px) {
+   
+   
+    #myForm{
+        height: 150px;
+        width: 80%;
+        background-color: rgb(231, 231, 205);
+        /* background-color: rgb(222, 222, 200); */
+        position: relative;
+        margin: auto;
+        top: 30px;
+    }
+    #myForm h2{
+    color: rgb(240, 97, 54);
+    display: flex;
+    justify-content: center;
+    }
+    .input-field{
+        display: block;
+        /* height: 30px; */
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        border: none;
+        border-bottom: 1px solid gray;
+        background-color: transparent;
+    }
+    #submit-btn{
+        height: 40px;
+        width: 40px;
+        border-radius: 2rem;
+        background-color: rgb(240, 97, 54);
+        color: white;  
+        border:none;
+        margin-left: 65%;
+        position: relative;
+        top: 10%;
+        cursor: pointer;
+    
+    }
+    #submit-btn i{
+        cursor: pointer;
+    }
+    #main-Container{
+     margin-top: 50px;
+}
+    #Discription-Container{
+        height: 200px;
+        width: 300px;
+        margin-top: 8%;  
+        background-color: rgb(245, 242, 238);
+        border-radius: 10px;
+    }
+    #Title{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    border-bottom: 1px solid rgb(218, 215, 215);
+    font-size: 16px;
+
+}
+#Description{
+    display: flex;
+    justify-content: center;    
+}
+  }
